@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>世锟裸眼3D-DISPLAY</h1>
+<h3>根据google-exoplayer定制的裸眼3D播放器</h3>
+<ul>
+<li>支持4K硬解码   </li>
+<li>支持无缝播放   </li>
+<li>
+支持开机自动播放
+<ul>
+<li>播放器默认为4K硬解码开机自动无缝播放，支持最大分辨率3840x2160。</li>
+</ul>
+</li>
+<li>
+支持ud格式视频
+<ul>
+<li>视频文件的文件名中，需要包含字母ud/UD，视频将自动识别为上下格式的视频。</li>
+</ul>
+</li>
+<li>
+支持2dz格式视频
+<ul>
+<li>视频文件的文件名中，需要包含字母2dz/2DZ，视频将自动识别为2d+z格式的视频。</li>
+</ul>
+</li>
+<li>
+支持lrv格式视频
+<ul>
+<li>视频文件的文件名中，需要包含字母lrv/LRV，视频将自动识别为左右格式的视频。</li>
+</ul>
+</li>
+<li>
+支持9grid格式视频
+<ul>
+<li>视频文件的文件名中，需要包含字母9grid/9GRID，视频将自动识别为九宫格格式的视频。</li>
+</ul>
+</li>
+<li>
+3288与3399兼容支持
+<ul>
+<li>3288支持上述所有格式，3399支持除UD之外的所有格式。</li>
+</ul>
+</li>
+<li>
+插入U盘自动拷贝视频
+<ul>
+<li>操作步骤：① 在U盘根目录创建名为&quot;_video&quot;的文件夹 ②在创建好的&quot;_video&quot;文件夹中新建txt文件，文件名称可以是“1.txt”/&quot;2.txt&quot;/&quot;3.txt&quot;，分别对应三种不同的拷贝模式。③ 将U盘插入开机状态的机器中，3秒钟之后开始自动拷贝视频。</li>
+<li>
+三种模式：     
+
+<ul>
+<li>模式1：U盘 ——&gt; 机器   
+</li>
+<li>模式2：机器 ——&gt; U盘   
+</li>
+<li>模式3：U盘 ——&gt; 机器（覆盖以前的内容）  
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+自动读取加密的配置参数文件
+<ul>
+<li>播放器的配置参数文件保存在广告机中，位置为 ———— /MouHe/conf/mouhe.pwd</li>
+<li>注意请不要自行删除该配置文件，否则播放器无法正常运行！！！</li>
+</ul>
+</li>
+<li>
+自动播放指定文件夹下的视频  
+
+<ul>
+<li>播放的视频文件保存在广告机中，位置为：———— /MouHe/</li>
+</ul>
+</li>
+<li>
+支持3288景深调节（2DZ）
+<ul>
+<li>广告机正在播放视频时，可以点击鼠标右键，返回到2DZ格式视频的景深调节界面，点击景深调节，设置景深并保存即可。</li>
+</ul>
+</li>
+<li>
+支持的视频格式：MP4、M4A、FMP4、WebM、MKV、MP3、Ogg、WAV、MPEG-TS、MPEG-PS、FLV和ADTS (AAC)
+<ul>
+<li>详细说明：</li>
+<li>By default Player uses Android’s platform decoders. Hence the supported sample formats depend on the underlying platform rather than on ExoPlayer. Sample formats supported by Android devices are documented here. Note that individual devices may support additional formats beyond those listed.</li>
+<li>默认格式说明：</li>
+<li>https://google.github.io/ExoPlayer/supported-formats.html （需翻墙）</li>
+<li>https://developer.android.google.cn/guide/topics/media/media-formats#core (国内地址)</li>
+</ul>
+</li>
+<li>
+常见问题：
+<ol>
+<li>
+视频无3D效果
+<ul>
+<li>解决办法：<br />
+① 请检查文件名是否正确  ② 请检查配置文件的参数是否为正确（参数不能为空，线数跟倾角不能为零） ③ 如果是3288板型，请检测IIC通信的线路是否正常</li>
+</ul>
+</li>
+<li>
+播放器开机不自动启动 
+<ul>
+<li>原因：应用无法接收到开机广播。</li>
+<li>解决办法：① 应用程序安装后重来没有启动过，这种情况下应用程序接收不到任何广播。① 应用安装到了sd卡内，安装在sd卡内的应用是收不到开机广播的。③ 系统开启了Fast Boot模式，这种模式下系统启动并不会发送开机广播。</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
