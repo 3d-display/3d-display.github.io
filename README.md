@@ -1,6 +1,6 @@
 # 世锟裸眼3D-DISPLAY
 
-## [点击下载](https://raw.githubusercontent.com/3d-display/3d-display.github.io/master/%E8%A3%B8%E7%9C%BC3D-DISPLAY-RC9.apk)
+## APP下载：[点击下载](https://raw.githubusercontent.com/3d-display/3d-display.github.io/master/%E8%A3%B8%E7%9C%BC3D-DISPLAY-RC9.apk)
 
 ### 根据google-exoplayer定制的裸眼3D播放器  
 
